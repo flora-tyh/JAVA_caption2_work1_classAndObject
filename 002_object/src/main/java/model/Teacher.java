@@ -1,10 +1,10 @@
 package model;
 
 public class Teacher {
-    public String name;
-    public Student[] students = new Student[1];
-    public Student stu0 = new Student("李莉", 20, "女");
-    public Student stu1 = new Student("王其", 21, "男");
+    String name;
+    Student[] students = new Student[1];
+    Student stu0 = new Student("李莉", 20, "女");
+    Student stu1 = new Student("王其", 21, "男");
 
     public Teacher(String name) {
         this.name = name;
