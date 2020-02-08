@@ -6,9 +6,9 @@ public class Application {
     public static void main(String[] args) {
         Student stu1 = new Student("李莉", 20, "女");
 
-        System.out.println(stu1.name);
-        System.out.println(stu1.age);
-        System.out.println(stu1.sex);
+        System.out.println(stu1.getName());
+        System.out.println(stu1.getAge());
+        System.out.println(stu1.getSex());
         stu1.study();
         stu1.rest();
 
