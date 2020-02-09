@@ -1,18 +1,36 @@
 package model;
 
 public class Teacher {
-    String name;
-    Student[] students = new Student[1];
-    Student stu0 = new Student("李莉", 20, "女");
-    Student stu1 = new Student("王其", 21, "男");
+    private String name;
+    private Student[] students = new Student[1];
 
-    public Teacher(String name) {
+    public Teacher() {
+    }
+
+    public Teacher(String name, Student[] students) {
         this.name = name;
+        this.students = students;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Student[] getStudents() {
+        return students;
+    }
+
+    public void setStudents(Student[] students) {
+        this.students = students;
     }
 
     public void checkStudent() {
         for (int i = 0; i < students.length; i++) {
-            System.out.println(students[i].name);
+            System.out.println(students[i].getName());
         }
     }
 
