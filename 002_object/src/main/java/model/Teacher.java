@@ -34,10 +34,9 @@ public class Teacher {
         }
     }
 
-    public void addStudent(String name, int age, String sex) {
+    public void addStudent(Student newStu) {
         Student[] studentsAfterAdd = new Student[students.length + 1];
         System.arraycopy(students, 0, studentsAfterAdd, 0, students.length);
-        Student newStu = new Student(name, age, sex);
         studentsAfterAdd[studentsAfterAdd.length - 1] = newStu;
         students = studentsAfterAdd;
     }
